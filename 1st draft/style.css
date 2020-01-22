@@ -1,0 +1,86 @@
+header {
+  background-color: rgb(255, 235, 205);
+  width: auto;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+
+#game-row {
+  background-color: rgb(255, 235, 205);
+}
+
+#info-stats {
+  border: 1px solid white;
+  flex: 1;
+}
+
+#game-cards {
+  border: 1px solid white;
+  flex: 6;
+}
+
+.stats {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.games-played {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.num1 {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.attempts {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.num2 {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.accuracy {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.num3 {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+main {}
+
+.col-1 {
+  width: 8%;
+}
+
+.col-2 {
+  width: 16%;
+}
+
+.col-3 {
+  width: 24%;
+}

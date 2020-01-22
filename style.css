@@ -1,0 +1,74 @@
+body {
+  background-image: url("assets/images/lfz-background.jpg");
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+aside {
+  flex: 2;
+}
+
+main {
+  flex: 10;
+}
+
+.flex-grid{
+  display: flex;
+}
+
+.card {
+  flex: 2;
+  background-image: url(assets/images/lfz-card.jpg);
+}
+
+.stats {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.games-played {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.num1 {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.attempts {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.num2 {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.accuracy {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}
+
+.num3 {
+  background-color: rgb(135, 206, 235);
+  text-align: center;
+  padding: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px;
+}

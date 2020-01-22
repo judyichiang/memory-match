@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  margin-bottom: .5rem;
+}
+
+.col-1 {
+  width: 8%;
+}
+
+.col-2 {
+  width: 16%;
+}
+
+.col-3 {
+  width: 24%;
+}
