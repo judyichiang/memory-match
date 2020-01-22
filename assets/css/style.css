@@ -1,5 +1,5 @@
 body {
-  background-image: url("assets/images/lfz-background.jpg");
+  background-image: url("../images/lfz-background.jpg");
   height: 97vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@ main {
 .game-row {}
 
 .card {
-  background-image: url(assets/images/lfz-card.jpg);
+  background-image: url("../images/lfz-card.jpg");
   height: 25vh;
   background-size: cover;
   background-repeat: no-repeat;
