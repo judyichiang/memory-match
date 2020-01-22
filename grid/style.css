@@ -1,5 +1,5 @@
 body {
-  background-image: url("assets/images/lfz-background.jpg");
+  background-image: url("../assets/images/lfz-background.jpg");
   height: 97vh;
 }
 
@@ -9,27 +9,37 @@ header {
 }
 
 aside {
-  padding-right: 10px;
+  flex: 2;
 }
 
 main {
   flex: 10;
 }
 
-#card {
+/* .flex-grid {
+  display: flex;
+  flex-wrap: row wrap;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+.flex-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 10px;
+}
+
+.card {
   /* flex: 2; */
-  background-image: url(assets/images/lfz-card.jpg);
+  background-image: url("../assets/images/lfz-card.jpg");
   height: 19vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0;
-  border: 1px solid white;
+  margin: 5px 10px 5px 10px;
 }
 
-
-
-/* Stats Information */
 .stats {
   background-color: rgb(135, 206, 235);
   text-align: center;

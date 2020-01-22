@@ -8,7 +8,6 @@
   width: 100%;
   display: flex;
   margin-bottom: .5rem;
-  flex-wrap: wrap;
 }
 
 .col-1 {
