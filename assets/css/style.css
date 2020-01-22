@@ -26,12 +26,13 @@ main {
 
 .card {
   background-image: url("../images/lfz-card.jpg");
-  height: 25vh;
+  height: 26vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* border: 1px solid rgba(255, 255, 255, 0); */
-  border: 1px solid white;
+  flex-basis: auto;
+  /* position: relative; */
+  margin: 0 auto .5rem;
 }
 
 /* Stats Information */
