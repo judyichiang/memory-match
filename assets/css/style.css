@@ -25,7 +25,7 @@ main {
 .game-row {}
 
 .card {
-  background-image: url("../images/lfz-card.jpg");
+  /* background-image: url("../images/lfz-card.jpg"); */
   height: 26vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,6 +33,23 @@ main {
   flex-basis: auto;
   /* position: relative; */
   margin: 0 auto .5rem;
+}
+
+.card-front, .card-back {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-basis: auto;
+}
+
+.card-back {
+  background-image: url('../images/lfz-card.jpg')
+}
+
+.js-logo {
+  background-image: url('../assets/images/js-logo.png');
 }
 
 /* Stats Information */
