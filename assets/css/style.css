@@ -8,6 +8,8 @@ body {
 header {
   width: 100%;
   text-align: center;
+  font-size: 18px;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 aside {
@@ -17,7 +19,6 @@ aside {
 main {
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 1rem;
 }
