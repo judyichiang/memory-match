@@ -17,12 +17,10 @@ aside {
 main {
   height: 100%;
   display: flex;
-  flex-wrap: row wrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 1rem;
 }
-
-#gameCards {}
 
 .card {
   background-image: url("../images/lfz-card.jpg");
@@ -96,20 +94,6 @@ aside>div {
   justify-content: center;
   align-items: center;
 }
-
-.stats {}
-
-.games-played {}
-
-.num1 {}
-
-.attempts {}
-
-.num2 {}
-
-.accuracy {}
-
-.num3 {}
 
 .hidden {
   display: none;
