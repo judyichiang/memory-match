@@ -11,6 +11,10 @@ var matches = 0;
 
 var modal = document.querySelector('.modal-overlay');
 
+var attempts = 0;
+var gamesPlayed = 0;
+
+
 
 function handleClick(event) {
 
@@ -32,21 +36,21 @@ function handleClick(event) {
 
     if (firstCardClasses === secondCardClasses) {
       matches++;
-      // console.log("matches variables: ", matches);
-      if (maxMatches === matches){
-        // console.log("You have won!!")
+      attempts++;
+      console.log("Attempts: ", attempts);
+      if (maxMatches === matches) {
         modal.className = "modal-overlay";
 
       }
 
-
-
-        mainElem.addEventListener("click", handleClick);
+      mainElem.addEventListener("click", handleClick);
       firstCardClicked = null;
       secondCardClicked = null;
 
     }
     else {
+      attempts++;
+      console.log("Attempts: ", attempts);
       setTimeout(function () {
         firstCardClicked.classList.remove("hidden");
         secondCardClicked.classList.remove("hidden");
