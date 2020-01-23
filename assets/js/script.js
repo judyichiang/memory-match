@@ -86,5 +86,9 @@ function resetGame() {
 }
 
 function resetCards() {
-  event.target.classList.remove("hidden");
+  var hiddenCards = document.querySelectorAll(".card-back")
+  console.log(hiddenCards)
+  for (var i = 0; i < hiddenCards.length; i++) {
+    hiddenCards[i].classList.remove("hidden");
+  }
 }
