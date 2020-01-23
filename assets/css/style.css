@@ -95,6 +95,24 @@ aside>div {
   align-items: center;
 }
 
+.modal-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.modal-content {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(89, 172, 245, .8);
+  width: 25%;
+  font-size: larger;
+  padding: 50px;
+}
+
 .hidden {
   display: none;
 }
