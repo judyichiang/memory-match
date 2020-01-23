@@ -18,13 +18,15 @@ var playedElem = document.getElementById('games-played');
 var attemptsElem = document.getElementById('attempts');
 var accuracyElem = document.getElementById('accuracy');
 
+var statistic;
+
+
 function handleClick(event) {
 
   if (event.target.className.indexOf("card-back") === -1) {
     return;
   }
   event.target.className += ' hidden';
-
   if (!firstCardClicked) {
     firstCardClicked = event.target;
     firstCardClasses = firstCardClicked.previousElementSibling.className;
@@ -40,7 +42,6 @@ function handleClick(event) {
       matches++;
       attempts++;
       displayStats();
-      console.log("Attempts: ", attempts);
       if (maxMatches === matches) {
         modal.className = "modal-overlay";
 
@@ -53,7 +54,6 @@ function handleClick(event) {
     }
     else {
       attempts++;
-      console.log("Attempts: ", attempts);
       displayStats();
       setTimeout(function () {
         firstCardClicked.classList.remove("hidden");
@@ -68,12 +68,23 @@ function handleClick(event) {
   }
 }
 
-function displayStats(){
+function displayStats() {
   playedElem.textContent = gamesPlayed;
   attemptsElem.textContent = attempts;
   accuracyElem.textContent = calculateAccuracy(attempts, matches) + "%";
 }
 
-function calculateAccuracy(attempts, matches){
-  return Math.trunc((matches / attempts) *100);
+function calculateAccuracy(attempts, matches) {
+  return Math.trunc((matches / attempts) * 100);
+}
+
+function resetGame() {
+  attempts = 0;
+  matches = 0;
+  gamesPlayed++;
+  displayStats();
+}
+
+function resetCards() {
+  event.target.classList.remove("hidden");
 }
