@@ -18,8 +18,8 @@ var playedElem = document.getElementById('games-played');
 var attemptsElem = document.getElementById('attempts');
 var accuracyElem = document.getElementById('accuracy');
 
-var statistic;
-
+var button = document.getElementById("resetButton");
+button.addEventListener("click", resetGame);
 
 function handleClick(event) {
 
@@ -75,14 +75,24 @@ function displayStats() {
 }
 
 function calculateAccuracy(attempts, matches) {
-  return Math.trunc((matches / attempts) * 100);
+  if (attempts === 0) {
+    return 0;
+  }
+  else {
+    return Math.trunc((matches / attempts) * 100);
+  }
 }
+
+
 
 function resetGame() {
   attempts = 0;
   matches = 0;
   gamesPlayed++;
   displayStats();
+  modal.className += " hidden";
+  resetCards()
+
 }
 
 function resetCards() {
