@@ -21,14 +21,36 @@ function handleClick(event) {
 
   } else {
     secondCardClicked = event.target;
+
+    mainElem.removeEventListener("click", handleClick);
+
+
     // console.log(secondCardClicked)
     secondCardClasses = secondCardClicked.previousElementSibling.className;
     // console.log(secondCardClasses);
-    if(firstCardClasses === secondCardClasses){
+    if (firstCardClasses === secondCardClasses) {
       console.log("The images match")
+      mainElem.addEventListener("click", handleClick);
+      firstCardClicked = null;
+      secondCardClicked = null;
+
+
     }
-    else{
+    else {
       console.log("The images do not match")
+
+      setTimeout(function () {
+        firstCardClicked.classList.remove("hidden");
+        secondCardClicked.classList.remove("hidden");
+
+        mainElem.addEventListener("click", handleClick);
+        firstCardClicked = null;
+        secondCardClicked = null;
+
+      }, 1500);
+
+
+
     }
   }
 
