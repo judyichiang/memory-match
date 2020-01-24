@@ -26,7 +26,7 @@ main {
 }
 
 .card {
-  /* background-image: url("../images/lfz-card.jpg"); */
+  background-image: url("../images/logo/blue-universe-956981.jpg");
   background-color: black;
   height: 28vh;
   background-size: cover;
@@ -115,6 +115,7 @@ aside>div {
   position: fixed;
   display: flex;
   justify-content: center;
+  top: 0;
   align-items: center;
   height: 100vh;
   width: 100%;
