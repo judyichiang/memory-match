@@ -12,6 +12,11 @@ header {
   color: white;
 }
 
+.main-title {
+  color: turquoise;
+  text-shadow: 2px 2px 3px lightslategrey;
+}
+
 aside {
   padding-right: 10px;
   text-align: center;
@@ -103,12 +108,13 @@ aside>div {
   margin: 1rem;
   width: 90%;
   height: 10vh;
-  background-color:black;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  color: white;
+  color: lightsteelblue;
+  text-shadow: 2px 2px 3px turquoise;
 }
 
 .modal-overlay {
