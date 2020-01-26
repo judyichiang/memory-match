@@ -66,39 +66,39 @@ main {
   background-image: url('../images/lfz-card.jpg')
 }
 
-.css-logo {
+.netflix {
   background-image: url('../images/logo/netflix.png');
 }
 
-.docker-logo {
+.disney {
   background-image: url('../images/logo/disney_plus.png');
 }
 
-.gitHub-logo {
+.hbo {
   background-image: url('../images/logo/hbo_now.jfif');
 }
 
-.html-logo {
+.amazon {
   background-image: url('../images/logo/amazon_prime.jpg');
 }
 
-.js-logo {
+.hulu {
   background-image: url('../images/logo/hulu.jpg');
 }
 
-.mysql-logo {
+.thanos {
   background-image: url('../images/logo/thanos.jpg');
 }
 
-.node-logo {
+.youtube {
   background-image: url('../images/logo/youTube_red.jpg');
 }
 
-.php-logo {
+.cbs {
   background-image: url('../images/logo/cbs.jpg');
 }
 
-.react-logo {
+.anime {
   background-image: url('../images/logo/animation.jpg');
 }
 
