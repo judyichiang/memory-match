@@ -140,7 +140,7 @@ function shuffle() {
     // console.log(cards[i]);
     newCards.push(cards[i])
     for (var k = 0; k < cardFront.length; k++) {
-      console.log(cardFront[k].className);
+      cardFront[k].className = "card-front "+cards[i];
 
     }
 
