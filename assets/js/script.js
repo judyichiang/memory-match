@@ -125,6 +125,11 @@ var cards = [
 ];
 
 
+var cardFront = document.querySelectorAll("div.card-front");
+// console.log(cardFront);
+
+var newCards =[];
+
 function shuffle() {
   for (var i = 0; i < cards.length; i++) {
     const swapIndex = Math.floor(Math.random() * cards.length)
@@ -132,11 +137,24 @@ function shuffle() {
     const cardToSwap = cards[swapIndex]
     cards[i] = cardToSwap
     cards[swapIndex] = currentCard;
-    console.log(cards[i]);
+    // console.log(cards[i]);
+    newCards.push(cards[i])
+    for (var k = 0; k < cardFront.length; k++) {
+      console.log(cardFront[k].className);
+
+    }
 
     // var cardDeck = document.createElement('div');
     // cardDeck.className = cards[i];
     // container.appendChild(cardDeck);
   }
+
 }
 shuffle();
+
+console.log(newCards);
+
+// for(var k = 0; k <cardFront.length; k++){
+//   console.log(cardFront[k].className);
+
+// }
