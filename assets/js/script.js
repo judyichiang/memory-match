@@ -91,17 +91,15 @@ function resetGame() {
   displayStats();
   modal.className += " hidden";
   resetCards();
-
-
 }
 
 function resetCards() {
   var hiddenCards = document.querySelectorAll(".card-back")
   // console.log(hiddenCards)
+  shuffle();
   for (var i = 0; i < hiddenCards.length; i++) {
     hiddenCards[i].classList.remove("hidden");
   }
-
 }
 
 var cards = [
@@ -125,48 +123,22 @@ var cards = [
   "anime",
 ];
 
-
 var cardFront = document.querySelectorAll("div.card-front");
-// console.log(cardFront);
-
-// var newCards = [];
 
 function shuffle() {
-  var newCards =[];
+  var newCards = [];
   for (var i = 0; i < cards.length; i++) {
     const swapIndex = Math.floor(Math.random() * cards.length)
     const currentCard = cards[i]
     const cardToSwap = cards[swapIndex]
     cards[i] = cardToSwap
     cards[swapIndex] = currentCard;
-    // console.log(cards[i]);
     newCards.push(cards[i])
   }
 
-  for(var k=0; k< newCards.length; k++){
-    cardFront.className = "card-front " + newCards[k];
-    console.log(cardFront);
-
+  for (var k = 0; k < newCards.length; k++) {
+    cardFront[k].className = "card-front " + newCards[0];
   }
+  console.log(newCards);
 }
 shuffle();
-
-
-// console.log(newCards);
-
-// cardFront[k].className = "card-front " + newCards[i];
-
-// function shuffleCards() {
-//   shuffle();
-//   for (var i = 0; i < newCards.length; i++) {
-//     var oneCard = newCards[i];
-//     for (var k = 0; k < cardFront.length; k++) {
-//       cardFront[k].className = "card-front " + oneCard;
-
-//     }
-//   }
-
-
-// }
-
-// shuffleCards();
