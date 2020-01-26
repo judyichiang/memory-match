@@ -10,6 +10,7 @@ var maxMatches = 9;
 var matches = 0;
 
 var modal = document.querySelector('.modal-overlay');
+var modalEnd = document.querySelector('.modal-overlayEnd');
 
 var attempts = 0;
 var gamesPlayed = 0;
@@ -21,6 +22,12 @@ var accuracyElem = document.getElementById('accuracy');
 var button = document.getElementById("resetButton");
 button.addEventListener("click", resetGame);
 
+var gameOver = document.getElementById("gameOver");
+gameOver.addEventListener("click", theEnd);
+
+
+var restartButton = document.getElementById("restart");
+restartButton.addEventListener("click", restartFunc);
 
 function handleClick(event) {
 
@@ -103,6 +110,24 @@ function resetCards() {
   }
 }
 
+function theEnd() {
+  attempts = 0;
+  matches = 0;
+  gamesPlayed++;
+  displayStats();
+  modal.className += " hidden";
+  modalEnd.className = "modal-overlayEnd"
+}
+
+function restartFunc(){
+  attempts = 0;
+  matches = 0;
+  gamesPlayed = 0;
+  displayStats();
+  modalEnd.className += " hidden";
+  resetCards();
+}
+
 var cards = [
   "netflix",
   "disney",
@@ -147,7 +172,7 @@ function shuffleCards() {
     var back = document.createElement("div");
 
     front.className = "card-front " + cards[k];
-    // console.log(cards[k]);
+    console.log(cards[k]);
     back.className = "card-back";
 
     col2.appendChild(front);
@@ -157,8 +182,8 @@ function shuffleCards() {
 
 shuffleCards();
 
-function destroyChildren(elem){
-  while(elem.firstChild){
+function destroyChildren(elem) {
+  while (elem.firstChild) {
     elem.removeChild(elem.firstChild);
   }
 }

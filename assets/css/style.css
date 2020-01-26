@@ -201,7 +201,7 @@ aside>div {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  color:white;
+  color: white;
   text-shadow: 2px 2px 3px turquoise;
 }
 
@@ -228,6 +228,7 @@ aside>div {
   color: rgb(255, 255, 255);
   font-size: 16px;
   line-height: 16px;
+  width: 50%;
   padding: 6px;
   border-radius: 10px;
   font-family: Georgia, serif;
@@ -247,6 +248,75 @@ aside>div {
 }
 
 #resetButton:active {
+  background: #144E75;
+}
+
+.modal-overlayEnd {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.modal-contentEnd {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(89, 172, 245, .8);
+  width: 25%;
+  font-size: larger;
+  padding: 50px;
+}
+
+#restart {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  width: 50%;
+  padding: 6px;
+  border-radius: 10px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}
+
+#restart:hover {
+  background: #1C6EA4;
+}
+
+#gameOver {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 16px;
+  width: 50%;
+  padding: 6px;
+  border-radius: 10px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}
+
+#gameOver:hover {
+  background: #1C6EA4;
+}
+
+#gameOver:active {
   background: #144E75;
 }
 
