@@ -29,6 +29,9 @@ gameOver.addEventListener("click", theEnd);
 var restartButton = document.getElementById("restart");
 restartButton.addEventListener("click", restartFunc);
 
+var closeWin = document.getElementById("close-window");
+closeWin.addEventListener("click",closeWindow);
+
 function handleClick(event) {
 
   if (event.target.className.indexOf("card-back") === -1) {
@@ -128,6 +131,10 @@ function restartFunc(){
   resetCards();
 }
 
+function closeWindow() {
+  window.close();
+}
+
 var cards = [
   "netflix",
   "disney",
@@ -160,7 +167,6 @@ function shuffle(arr) {
   }
 }
 
-
 function shuffleCards() {
   shuffle(cards);
   for (var k = 0; k < cards.length; k++) {
@@ -172,7 +178,7 @@ function shuffleCards() {
     var back = document.createElement("div");
 
     front.className = "card-front " + cards[k];
-    console.log(cards[k]);
+    // console.log(cards[k]);
     back.className = "card-back";
 
     col2.appendChild(front);
