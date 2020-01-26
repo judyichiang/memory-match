@@ -123,10 +123,13 @@ var cards = [
   "anime",
 ];
 
-var cardFront = document.querySelectorAll("div.card-front");
+
+var gameCards = document.getElementById("gameCards")
+// console.log(gameCards)
+var newCards = [];
 
 function shuffle() {
-  var newCards = [];
+  // var newCards = [];
   for (var i = 0; i < cards.length; i++) {
     const swapIndex = Math.floor(Math.random() * cards.length)
     const currentCard = cards[i]
@@ -135,10 +138,22 @@ function shuffle() {
     cards[swapIndex] = currentCard;
     newCards.push(cards[i])
   }
+  // console.log(newCards);
 
   for (var k = 0; k < newCards.length; k++) {
-    cardFront[k].className = "card-front " + newCards[0];
+    var col2 = document.createElement("div");
+    col2.className = "col-2 card";
+    gameCards.appendChild(col2);
+
+    var front = document.createElement("div");
+    var back = document.createElement("div");
+
+    front.className = "card-front " + newCards[k];
+    console.log(newCards[k]);
+    back.className = "card-back";
+
+    col2.appendChild(front);
+    col2.appendChild(back);
   }
-  console.log(newCards);
 }
 shuffle();
