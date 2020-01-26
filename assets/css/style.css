@@ -14,8 +14,8 @@ header {
 }
 
 .main-title {
-  color: turquoise;
-  text-shadow: 2px 2px 3px lightslategrey;
+  color: white;
+  text-shadow: 2px 2px 3px turquoise;
 }
 
 aside {
@@ -65,40 +65,129 @@ main {
   background-image: url('../images/lfz-card.jpg')
 }
 
+.card-back:hover {
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
 .netflix {
   background-image: url('../images/logo/netflix.png');
+}
+
+.netflix:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .disney {
   background-image: url('../images/logo/disney_plus.png');
 }
 
+.disney:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
 .hbo {
   background-image: url('../images/logo/hbo_now.jfif');
+}
+
+.hbo:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .amazon {
   background-image: url('../images/logo/amazon_prime.jpg');
 }
 
+.amazon:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
 .hulu {
   background-image: url('../images/logo/hulu.jpg');
+}
+
+.hulu:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .thanos {
   background-image: url('../images/logo/thanos.jpg');
 }
 
+.thanos:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
 .youtube {
   background-image: url('../images/logo/youTube_red.jpg');
+}
+
+.youtube:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .cbs {
   background-image: url('../images/logo/cbs.jpg');
 }
 
+.cbs:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
 .anime {
   background-image: url('../images/logo/animation.jpg');
+}
+
+.anime:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 /* Stats Information */
@@ -112,7 +201,7 @@ aside>div {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  color: lightsteelblue;
+  color:white;
   text-shadow: 2px 2px 3px turquoise;
 }
 

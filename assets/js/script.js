@@ -96,6 +96,7 @@ function resetGame() {
 function resetCards() {
   var hiddenCards = document.querySelectorAll(".card-back")
   // console.log(hiddenCards)
+  destroyChildren(gameCards);
   shuffleCards();
   for (var i = 0; i < hiddenCards.length; i++) {
     hiddenCards[i].classList.remove("hidden");
@@ -146,7 +147,7 @@ function shuffleCards() {
     var back = document.createElement("div");
 
     front.className = "card-front " + cards[k];
-    console.log(cards[k]);
+    // console.log(cards[k]);
     back.className = "card-back";
 
     col2.appendChild(front);
@@ -155,3 +156,9 @@ function shuffleCards() {
 }
 
 shuffleCards();
+
+function destroyChildren(elem){
+  while(elem.firstChild){
+    elem.removeChild(elem.firstChild);
+  }
+}
