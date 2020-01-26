@@ -102,3 +102,41 @@ function resetCards() {
     hiddenCards[i].classList.remove("hidden");
   }
 }
+
+var cards = [
+  "netflix",
+  "disney",
+  "hbo",
+  "amazon",
+  "hulu",
+  "thanos",
+  "youtube",
+  "cbs",
+  "anime",
+  "netflix",
+  "disney",
+  "hbo",
+  "amazon",
+  "hulu",
+  "thanos",
+  "youtube",
+  "cbs",
+  "anime",
+];
+
+
+function shuffle() {
+  for (var i = 0; i < cards.length; i++) {
+    const swapIndex = Math.floor(Math.random() * cards.length)
+    const currentCard = cards[i]
+    const cardToSwap = cards[swapIndex]
+    cards[i] = cardToSwap
+    cards[swapIndex] = currentCard;
+    console.log(cards[i]);
+
+    // var cardDeck = document.createElement('div');
+    // cardDeck.className = cards[i];
+    // container.appendChild(cardDeck);
+  }
+}
+shuffle();
