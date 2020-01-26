@@ -24,10 +24,8 @@ aside {
 }
 
 main {
-  height: 100%;
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .card {

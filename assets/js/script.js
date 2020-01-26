@@ -21,6 +21,7 @@ var accuracyElem = document.getElementById('accuracy');
 var button = document.getElementById("resetButton");
 button.addEventListener("click", resetGame);
 
+
 function handleClick(event) {
 
   if (event.target.className.indexOf("card-back") === -1) {
@@ -83,24 +84,24 @@ function calculateAccuracy(attempts, matches) {
   }
 }
 
-
-
 function resetGame() {
   attempts = 0;
   matches = 0;
   gamesPlayed++;
   displayStats();
   modal.className += " hidden";
-  resetCards()
+  resetCards();
+
 
 }
 
 function resetCards() {
   var hiddenCards = document.querySelectorAll(".card-back")
-  console.log(hiddenCards)
+  // console.log(hiddenCards)
   for (var i = 0; i < hiddenCards.length; i++) {
     hiddenCards[i].classList.remove("hidden");
   }
+
 }
 
 var cards = [
@@ -128,9 +129,10 @@ var cards = [
 var cardFront = document.querySelectorAll("div.card-front");
 // console.log(cardFront);
 
-var newCards =[];
+// var newCards = [];
 
 function shuffle() {
+  var newCards =[];
   for (var i = 0; i < cards.length; i++) {
     const swapIndex = Math.floor(Math.random() * cards.length)
     const currentCard = cards[i]
@@ -139,22 +141,32 @@ function shuffle() {
     cards[swapIndex] = currentCard;
     // console.log(cards[i]);
     newCards.push(cards[i])
-    for (var k = 0; k < cardFront.length; k++) {
-      cardFront[k].className = "card-front "+cards[i];
-
-    }
-
-    // var cardDeck = document.createElement('div');
-    // cardDeck.className = cards[i];
-    // container.appendChild(cardDeck);
   }
 
+  for(var k=0; k< newCards.length; k++){
+    cardFront.className = "card-front " + newCards[k];
+    console.log(cardFront);
+
+  }
 }
 shuffle();
 
-console.log(newCards);
 
-// for(var k = 0; k <cardFront.length; k++){
-//   console.log(cardFront[k].className);
+// console.log(newCards);
+
+// cardFront[k].className = "card-front " + newCards[i];
+
+// function shuffleCards() {
+//   shuffle();
+//   for (var i = 0; i < newCards.length; i++) {
+//     var oneCard = newCards[i];
+//     for (var k = 0; k < cardFront.length; k++) {
+//       cardFront[k].className = "card-front " + oneCard;
+
+//     }
+//   }
+
 
 // }
+
+// shuffleCards();
