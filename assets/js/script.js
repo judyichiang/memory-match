@@ -132,7 +132,7 @@ function restartFunc(){
 }
 
 function closeWindow() {
-  window.close();
+  window.top.close();
 }
 
 var cards = [
@@ -178,7 +178,7 @@ function shuffleCards() {
     var back = document.createElement("div");
 
     front.className = "card-front " + cards[k];
-    // console.log(cards[k]);
+    console.log(cards[k]);
     back.className = "card-back";
 
     col2.appendChild(front);
