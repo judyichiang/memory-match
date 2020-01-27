@@ -18,6 +18,7 @@ var gamesPlayed = 0;
 var playedElem = document.getElementById('games-played');
 var attemptsElem = document.getElementById('attempts');
 var accuracyElem = document.getElementById('accuracy');
+var gamesEnd = document.getElementById('games-end');
 
 var button = document.getElementById("resetButton");
 button.addEventListener("click", resetGame);
@@ -28,9 +29,6 @@ gameOver.addEventListener("click", theEnd);
 
 var restartButton = document.getElementById("restart");
 restartButton.addEventListener("click", restartFunc);
-
-var closeWin = document.getElementById("close-window");
-closeWin.addEventListener("click",closeWindow);
 
 function handleClick(event) {
 
@@ -81,6 +79,7 @@ function handleClick(event) {
 
 function displayStats() {
   playedElem.textContent = gamesPlayed;
+  gamesEnd.textContent = "Games Played: "+ gamesPlayed;
   attemptsElem.textContent = attempts;
   accuracyElem.textContent = calculateAccuracy(attempts, matches) + "%";
 }
@@ -105,7 +104,6 @@ function resetGame() {
 
 function resetCards() {
   var hiddenCards = document.querySelectorAll(".card-back")
-  // console.log(hiddenCards)
   destroyChildren(gameCards);
   shuffleCards();
   for (var i = 0; i < hiddenCards.length; i++) {
@@ -129,10 +127,6 @@ function restartFunc(){
   displayStats();
   modalEnd.className += " hidden";
   resetCards();
-}
-
-function closeWindow() {
-  window.top.close();
 }
 
 var cards = [
