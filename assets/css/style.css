@@ -10,8 +10,8 @@ header {
   width: 100%;
   text-align: center;
   font-size: 18px;
-  color: white;
-  text-shadow: 2px 2px 3px turquoise;
+  color: rgb(254, 234, 69);
+  text-shadow: 2px 2px 3px rgb(58, 175, 246);
 }
 
 aside {
@@ -194,8 +194,8 @@ aside>div {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  color: white;
-  text-shadow: 2px 2px 3px turquoise;
+  color: rgb(254, 234, 69);
+  text-shadow: 2px 2px 3px rgb(58, 175, 246);
 }
 
 .modal-overlay {
@@ -211,9 +211,9 @@ aside>div {
 .modal-content {
   text-transform: uppercase;
   text-align: center;
-  background-color: rgba(89, 172, 245, .8);
+  background-color: rgb(58, 175, 246);
   width: 25%;
-  font-size: larger;
+  font-size: 3vw;
   padding: 50px;
 }
 
