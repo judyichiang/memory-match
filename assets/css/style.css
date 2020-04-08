@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/logo/blue-universe-956981.jpg");
+  background-image: url("../images/star-wars/VintageStar.jpg");
   height: 97vh;
   background-size: cover;
   background-repeat: repeat;
@@ -10,10 +10,6 @@ header {
   width: 100%;
   text-align: center;
   font-size: 18px;
-  color: white;
-}
-
-.main-title {
   color: white;
   text-shadow: 2px 2px 3px turquoise;
 }
@@ -30,7 +26,7 @@ main {
 }
 
 .card {
-  background-image: url("../images/logo/blue-universe-956981.jpg");
+  /* background-image: url("../images/logo/blue-universe-956981.jpg"); */
   background-color: black;
   height: 28vh;
   background-size: cover;
@@ -62,7 +58,7 @@ main {
 }
 
 .card-back {
-  background-image: url('../images/lfz-card.jpg')
+  background-image: url('../images/star-wars/bubble.png')
 }
 
 .card-back:hover {
@@ -73,83 +69,83 @@ main {
   transform: scale(1.2);
 }
 
-.netflix {
-  background-image: url('../images/logo/netflix.png');
+.bobba-fett {
+  background-image: url('../images/star-wars/bobbaFett.png');
 }
 
-.netflix:hover {
+.bobba-fett:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.disney {
-  background-image: url('../images/logo/disney_plus.png');
+.luke {
+  background-image: url('../images/star-wars/luke.jpg');
 }
 
-.disney:hover {
+.luke:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.hbo {
-  background-image: url('../images/logo/hbo_now.jfif');
+.r2-d2 {
+  background-image: url('../images/star-wars/r2-d2.png');
 }
 
-.hbo:hover {
+.r2-d2:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.amazon {
-  background-image: url('../images/logo/amazon_prime.jpg');
+.chewbacca {
+  background-image: url('../images/star-wars/chewbacca.jpg');
 }
 
-.amazon:hover {
+.chewbacca:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.hulu {
-  background-image: url('../images/logo/hulu.jpg');
+.palps {
+  background-image: url('../images/star-wars/Palps.png');
 }
 
-.hulu:hover {
+.palps:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.thanos {
-  background-image: url('../images/logo/thanos.jpg');
+.darth {
+  background-image: url('../images/star-wars/darth01.jpg');
 }
 
-.thanos:hover {
+.darth:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.youtube {
-  background-image: url('../images/logo/youTube_red.jpg');
+.leia {
+  background-image: url('../images/star-wars/leia01.jpg');
 }
 
-.youtube:hover {
+.leia:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.cbs {
-  background-image: url('../images/logo/cbs.jpg');
+.han {
+  background-image: url('../images/star-wars/han01.jpg');
 }
 
-.cbs:hover {
+.han:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
-.anime {
-  background-image: url('../images/logo/animation.jpg');
+.c-3po {
+  background-image: url('../images/star-wars/c-3po.png');
 }
 
-.anime:hover {
+.c-3po:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -324,4 +320,13 @@ aside>div {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 760px) {
+  body {
+    background-image: url("../images/star-wars/space.jpg")
+  }
+  aside>div {
+    background: none;
+  }
 }
