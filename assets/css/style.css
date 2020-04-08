@@ -48,6 +48,7 @@ main {
 }
 
 .card-back {
+  background-image: url('../images/star-wars/bubble.png');
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -57,9 +58,7 @@ main {
   position: absolute;
 }
 
-.card-back {
-  background-image: url('../images/star-wars/bubble.png')
-}
+.card-back {}
 
 .card-back:hover {
   -ms-transform: scale(1.2);
