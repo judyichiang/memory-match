@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/star-wars/VintageStar.jpg");
+  background-image: url("../images/star-wars/starWars.jpg");
   height: 97vh;
   background-size: cover;
   background-repeat: repeat;
@@ -28,7 +28,7 @@ main {
 .card {
   /* background-image: url("../images/logo/blue-universe-956981.jpg"); */
   background-color: black;
-  height: 28vh;
+  /* height: 28vh; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -48,7 +48,7 @@ main {
 }
 
 .card-back {
-  background-image: url('../images/star-wars/bubble.png');
+  background-image: url('../images/star-wars/card-back02.jpg');
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -57,8 +57,6 @@ main {
   flex-basis: 15%;
   position: absolute;
 }
-
-.card-back {}
 
 .card-back:hover {
   -ms-transform: scale(1.2);
