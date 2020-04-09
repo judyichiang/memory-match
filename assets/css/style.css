@@ -56,6 +56,7 @@ main {
   background-position: center;
   flex-basis: 15%;
   position: absolute;
+  cursor: crosshair
 }
 
 .card-back:hover {
@@ -68,6 +69,7 @@ main {
 
 .bobba-fett {
   background-image: url('../images/star-wars/bobbaFett.png');
+  cursor: grab
 }
 
 .bobba-fett:hover {
@@ -77,6 +79,7 @@ main {
 
 .luke {
   background-image: url('../images/star-wars/luke.jpg');
+  cursor: grab
 }
 
 .luke:hover {
@@ -86,6 +89,7 @@ main {
 
 .r2-d2 {
   background-image: url('../images/star-wars/r2-d2.png');
+  cursor: grab
 }
 
 .r2-d2:hover {
@@ -95,6 +99,7 @@ main {
 
 .chewbacca {
   background-image: url('../images/star-wars/chewbacca.jpg');
+  cursor: grab
 }
 
 .chewbacca:hover {
@@ -104,6 +109,7 @@ main {
 
 .palps {
   background-image: url('../images/star-wars/Palps.png');
+  cursor: grab
 }
 
 .palps:hover {
@@ -113,6 +119,7 @@ main {
 
 .darth {
   background-image: url('../images/star-wars/darth01.jpg');
+  cursor: grab
 }
 
 .darth:hover {
@@ -122,6 +129,7 @@ main {
 
 .leia {
   background-image: url('../images/star-wars/leia01.jpg');
+  cursor: grab
 }
 
 .leia:hover {
@@ -131,6 +139,7 @@ main {
 
 .han {
   background-image: url('../images/star-wars/han01.jpg');
+  cursor: grab
 }
 
 .han:hover {
@@ -140,6 +149,7 @@ main {
 
 .c-3po {
   background-image: url('../images/star-wars/c-3po.png');
+  cursor: grab
 }
 
 .c-3po:hover {
@@ -321,9 +331,14 @@ aside>div {
 
 @media (max-width: 760px) {
   body {
+    padding-top: 2px;
     background-image: url("../images/star-wars/space.jpg")
+  }
+  header {
+    display: none
   }
   aside>div {
     background: none;
+    width: 45%;
   }
 }

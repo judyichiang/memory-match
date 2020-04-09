@@ -26,10 +26,11 @@ Try the application live at [http://memory-match.judyichiang.com](http://memory-
 - User can restart game after matching all cards
     - Cards shuffle
     - Stats reset
+- Mobile Responsiveness
 
 ## Preview
 
-![](assets//images/memory_match.gif)
+![](assets//images/star-wars/starwars.gif)
 
 #### Getting Started
 
@@ -46,4 +47,3 @@ Try the application live at [http://memory-match.judyichiang.com](http://memory-
     ```
 
 3. Go to `index.html` in Text Editor and open in browser
-
