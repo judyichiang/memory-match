@@ -48,6 +48,7 @@ main {
 
 .card-back {
   background-image: url('../images/star-wars/card-back02.jpg');
+  opacity: 0.15;
   height: 100%;
   width: 100%;
   height: 28vh;
@@ -157,6 +158,10 @@ main {
   animation-iteration-count: infinite;
 }
 
+img {
+  width: 80%;
+}
+
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
@@ -223,13 +228,12 @@ aside>div {
   text-align: center;
   background-color: rgb(58, 175, 246);
   width: 25%;
-  font-size: 3vw;
+  font-size: 2vw;
   padding: 50px;
 }
 
 #resetButton {
   color: rgb(255, 255, 255);
-  font-size: 16px;
   line-height: 16px;
   width: 50%;
   padding: 6px;
@@ -244,6 +248,7 @@ aside>div {
   box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
   border: 2px solid rgb(28, 110, 164);
   display: inline-block;
+  font-size: 2vw;
 }
 
 #resetButton:hover {
@@ -276,7 +281,6 @@ aside>div {
 #restart {
   color: rgb(255, 255, 255);
   font-size: 16px;
-  line-height: 16px;
   width: 50%;
   padding: 6px;
   border-radius: 10px;
@@ -290,6 +294,7 @@ aside>div {
   box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
   border: 2px solid rgb(28, 110, 164);
   display: inline-block;
+  font-size: 2vw;
 }
 
 #restart:hover {
@@ -298,7 +303,7 @@ aside>div {
 
 #gameOver {
   color: rgb(255, 255, 255);
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 16px;
   width: 50%;
   padding: 6px;
@@ -313,6 +318,7 @@ aside>div {
   box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
   border: 2px solid rgb(28, 110, 164);
   display: inline-block;
+  font-size: 2vw;
 }
 
 #gameOver:hover {
