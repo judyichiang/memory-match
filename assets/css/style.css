@@ -3,7 +3,7 @@ body {
   height: 97vh;
   background-size: cover;
   background-repeat: repeat;
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
 
 header {
@@ -329,6 +329,10 @@ aside>div {
   background: #144E75;
 }
 
+button {
+  cursor: pointer
+}
+
 /* ------------------------------ */
 
 .hidden {
@@ -347,7 +351,7 @@ aside>div {
     background: none;
     width: 45%;
   }
-  img{
+  img {
     width: 100%;
   }
 }
