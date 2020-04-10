@@ -57,7 +57,7 @@ main {
   background-position: center;
   flex-basis: 15%;
   position: absolute;
-  cursor: crosshair
+  cursor: pointer
 }
 
 .card-back:hover {
