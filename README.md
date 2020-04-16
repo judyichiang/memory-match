@@ -30,7 +30,7 @@ Try the application live at [http://memory-match.judyichiang.com](http://memory-
 
 ## Preview
 
-![](assets//images/star-wars/darthVend.gif)
+![](assets//images/star-wars-mem.gif)
 
 #### Getting Started
 
