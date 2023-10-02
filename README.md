@@ -14,9 +14,6 @@ A Vintage Star Wars themed card matching game with live statistic tracking and C
 - JavaScript
 - AWS EC2
 
-## Live Demo
-Try the application live on [my portfolio](http://memory-match.judyichiang.com)
-
 ## Features
 - Dynamically created cards onto the DOM
 - User can flip cards
